@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+
+    <!-- Ajouter une tâche -->
+    <form id="todo-form" class="add-row">
+      <input type="text" id="todo-input" placeholder="Nouvelle tâche…" autocomplete="off">
+      <button type="submit">Add</button>
+    </form>
+
+    <!-- Compteur + boutons -->
+    <div class="toolbar">
+      <span id="counter">Tasks: 0</span>
+      <div>
+        <button id="sort-btn" class="secondary">Sort by Date</button>
+        <button id="clear-btn" class="danger">Clear All</button>
+      </div>
+    </div>
+
+    <!-- Liste -->
+    <ul id="todo-list"></ul>
+
+    <p class="hint">Cliquez sur une tâche pour la marquer comme terminée.</p>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
